@@ -6,4 +6,10 @@
 //  Copyright © 2019 Christian Lorenzo. All rights reserved.
 //
 
-import Foundation
+import UIKit   //Framework that allows us to build UIs
+
+class ColorsTableViewController: UITableViewController {
+    
+}
+
+
