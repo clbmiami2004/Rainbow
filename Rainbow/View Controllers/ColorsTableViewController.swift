@@ -10,14 +10,31 @@ import UIKit   //Framework that allows us to build UIs
 
 class ColorsTableViewController: UITableViewController {
     
+    var colors: [Color] = [
+        Color(name: "Red", color: UIColor.red),
+        Color(name: "Orange", color: UIColor.orange),
+        Color(name: "Yellow", color: UIColor.yellow),
+        Color(name: "Green", color: UIColor.green),
+        Color(name: "Blue", color: UIColor.blue),
+        Color(name: "Cyan", color: UIColor.cyan),
+        Color(name: "Purple", color: UIColor.purple)
+    ]
+    
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return colors.count
     }
+    
+    
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: indexPath)
         
-        cell.textLabel?.text = "Cell #\(indexPath.row)"
+        let color = colors[indexPath.row]
+        
+        cell.textLabel?.text = color.name
         return cell
     }
     
