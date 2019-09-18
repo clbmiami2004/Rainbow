@@ -60,14 +60,12 @@
 		1704EB762331EE930049F13C /* Rainbow */ = {
 			isa = PBXGroup;
 			children = (
+				1704EB912331F0100049F13C /* Resources */,
 				1704EB8C2331EF770049F13C /* View Controllers */,
 				1704EB892331EF590049F13C /* Model */,
-				1704EB772331EE930049F13C /* AppDelegate.swift */,
 				1704EB792331EE930049F13C /* ViewController.swift */,
 				1704EB7B2331EE930049F13C /* Main.storyboard */,
-				1704EB7E2331EE970049F13C /* Assets.xcassets */,
 				1704EB802331EE970049F13C /* LaunchScreen.storyboard */,
-				1704EB832331EE970049F13C /* Info.plist */,
 			);
 			path = Rainbow;
 			sourceTree = "<group>";
@@ -87,6 +85,16 @@
 				1704EB8F2331EFB10049F13C /* ColorsDetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1704EB912331F0100049F13C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1704EB772331EE930049F13C /* AppDelegate.swift */,
+				1704EB7E2331EE970049F13C /* Assets.xcassets */,
+				1704EB832331EE970049F13C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UK9B9BTNM;
-				INFOPLIST_FILE = Rainbow/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Rainbow/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UK9B9BTNM;
-				INFOPLIST_FILE = Rainbow/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Rainbow/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
