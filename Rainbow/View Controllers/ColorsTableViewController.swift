@@ -50,6 +50,47 @@ class ColorsTableViewController: UITableViewController {
         }
     }
     
+    
+    @IBAction func addNewColor(_ sender: Any) {
+        let alert = UIAlertController(title: "Add Color", message: "Specify a color to add, values should be from 0-255.", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Color Name"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Red (0-255)"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Green (0-255)"
+        }
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Blue (0-255)"
+        }
+        
+        
+        //Alert controller and added all the fields to it.
+        alert.addAction(UIAlertAction(title: "Create", style: .default, handler: { (_) in
+            guard let name = alert.textFields?[0].text, !name.isEmpty else {return}
+            
+            guard let redString = alert.textFields?[1].text, let redValue = Double(redString) else {return}
+            
+            guard let greenString = alert.textFields?[2].text, let greenValue = Double(greenString) else {return}
+            
+            guard let blueString = alert.textFields?[3].text, let blueValue = Double(blueString) else {return}
+            
+            let color = Color(name: name, color: UIColor(red: CGFloat(redValue/255), green: CGFloat(greenValue/255), blue: CGFloat(blueValue/255), alpha: 1.0))
+            
+            self.colors.append(color) //Adding new colors to the array.
+            self.tableView.reloadData() // Reloading to show new colors.
+        }))
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
 }
 
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1704EB782331EE930049F13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704EB772331EE930049F13C /* AppDelegate.swift */; };
-		1704EB7A2331EE930049F13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704EB792331EE930049F13C /* ViewController.swift */; };
 		1704EB7D2331EE930049F13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704EB7B2331EE930049F13C /* Main.storyboard */; };
 		1704EB7F2331EE970049F13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1704EB7E2331EE970049F13C /* Assets.xcassets */; };
 		1704EB822331EE970049F13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704EB802331EE970049F13C /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		1704EB742331EE930049F13C /* Rainbow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1704EB772331EE930049F13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1704EB792331EE930049F13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1704EB7C2331EE930049F13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1704EB7E2331EE970049F13C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1704EB812331EE970049F13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				1704EB912331F0100049F13C /* Resources */,
 				1704EB8C2331EF770049F13C /* View Controllers */,
 				1704EB892331EF590049F13C /* Model */,
-				1704EB792331EE930049F13C /* ViewController.swift */,
 				1704EB7B2331EE930049F13C /* Main.storyboard */,
 				1704EB802331EE970049F13C /* LaunchScreen.storyboard */,
 			);
@@ -169,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1704EB902331EFB10049F13C /* ColorsDetailViewController.swift in Sources */,
-				1704EB7A2331EE930049F13C /* ViewController.swift in Sources */,
 				1704EB782331EE930049F13C /* AppDelegate.swift in Sources */,
 				1704EB8B2331EF6F0049F13C /* Color.swift in Sources */,
 				1704EB8E2331EF990049F13C /* ColorsTableViewController.swift in Sources */,

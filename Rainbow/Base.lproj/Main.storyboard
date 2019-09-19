@@ -36,7 +36,13 @@
                             <outlet property="delegate" destination="U1i-Y1-GlX" id="khh-9w-Cmv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Rainbow" id="6jP-AN-JRf" userLabel="Rainbow"/>
+                    <navigationItem key="navigationItem" title="Rainbow" id="6jP-AN-JRf" userLabel="Rainbow">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="m8Q-R6-8jZ">
+                            <connections>
+                                <action selector="addNewColor:" destination="U1i-Y1-GlX" id="mV8-35-dvr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6or-xz-fkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +58,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vt0-Kt-6jB"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3s-zg-g2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
